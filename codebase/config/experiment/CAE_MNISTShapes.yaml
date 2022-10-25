@@ -1,0 +1,8 @@
+# @package _global_
+
+input:
+  file_name: MNIST_shapes
+
+training:
+  steps: 10000  # How many times do we train on a single batch?
+

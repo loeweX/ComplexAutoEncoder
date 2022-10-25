@@ -1,0 +1,37 @@
+use_cuda: True
+seed: 42
+
+defaults:
+  - _self_  # Override values within this file with values in selected files.
+
+
+input:
+  load_path: datasets
+  batch_size: 64
+  channel: 1
+  image_height: 32
+  image_width: 32
+
+
+model:
+  hidden_dim: 32  # Only used for convolutional layers.
+  linear_dim: 64
+
+
+training:
+  learning_rate: 1e-3
+  learning_rate_schedule: 1  # 0 - constant lr; 1 - warm-up
+  warmup_steps: 500
+
+  print_idx: 5000
+  val_idx: -1  # -1 - no validation; X - every X steps.
+
+
+evaluation:
+  phase_mask_threshold: 0.1  # Threshold on minimum magnitude to use when evaluating phases; -1: no masking.
+
+
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d}/${now:%H-%M-%S.%f}
+

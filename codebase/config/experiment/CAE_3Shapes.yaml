@@ -1,0 +1,8 @@
+# @package _global_
+
+input:
+  file_name: 3shapes
+
+training:
+  steps: 100000  # How many times do we train on a single batch?
+
