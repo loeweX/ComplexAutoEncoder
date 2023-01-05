@@ -35,7 +35,7 @@ When using this code, please cite our paper:
 @article{lowe2022complex,
   title={Complex-Valued Autoencoders for Object Discovery},
   author={L{\"o}we, Sindy and Lippe, Phillip and Rudolph, Maja and Welling, Max},
-  journal={arXiv preprint arXiv:2204.02075},
+  journal={Transactions on Machine Learning Research (TMLR)},
   year={2022}
 }
 ```
