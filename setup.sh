@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Create conda environement.
+# Create conda environment.
 conda env create -f environment.yml
 conda activate CAE
 
